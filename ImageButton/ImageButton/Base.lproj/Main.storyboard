@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ac9-9N-w35">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Image Button-->
+        <scene sceneID="HHu-9J-6wj">
+            <objects>
+                <viewController title="Image Button" id="Ac9-9N-w35" customClass="ViewController" customModule="ImageButton" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GmI-2k-Vso">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZO-zU-RW0">
+                                <rect key="frame" x="157" y="423" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="SdI-CI-cIV"/>
+                                    <constraint firstAttribute="height" constant="50" id="Y83-F1-g6W"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="plus-normal"/>
+                                <state key="highlighted" image="plus-highlighted"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l5t-vA-2wn">
+                                <rect key="frame" x="166" y="662.5" width="42" height="62.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5b0-Pb-9X0">
+                                        <rect key="frame" x="0.0" y="0.0" width="42" height="62.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus-normal" translatesAutoresizingMaskIntoConstraints="NO" id="QSd-ZQ-C8s">
+                                                <rect key="frame" x="5" y="0.0" width="32" height="32"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htg-hG-Lem">
+                                                <rect key="frame" x="0.0" y="42" width="42" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QZ2-Cw-imd">
+                                        <rect key="frame" x="0.0" y="0.0" width="42" height="62.5"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="5b0-Pb-9X0" secondAttribute="trailing" id="2hr-gH-KNQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="5b0-Pb-9X0" secondAttribute="bottom" id="6BM-MS-kOK"/>
+                                    <constraint firstItem="5b0-Pb-9X0" firstAttribute="top" secondItem="l5t-vA-2wn" secondAttribute="top" id="N2c-dP-ERF"/>
+                                    <constraint firstItem="QZ2-Cw-imd" firstAttribute="top" secondItem="l5t-vA-2wn" secondAttribute="top" id="R6I-Wf-Ybp"/>
+                                    <constraint firstAttribute="trailing" secondItem="QZ2-Cw-imd" secondAttribute="trailing" id="TIX-Fc-Xs5"/>
+                                    <constraint firstAttribute="bottom" secondItem="5b0-Pb-9X0" secondAttribute="bottom" id="UQ3-08-KMd"/>
+                                    <constraint firstItem="5b0-Pb-9X0" firstAttribute="leading" secondItem="l5t-vA-2wn" secondAttribute="leading" id="W4L-q8-F49"/>
+                                    <constraint firstItem="QZ2-Cw-imd" firstAttribute="leading" secondItem="l5t-vA-2wn" secondAttribute="leading" id="Z8C-BU-bu1"/>
+                                    <constraint firstItem="5b0-Pb-9X0" firstAttribute="top" secondItem="l5t-vA-2wn" secondAttribute="top" id="bQc-gM-6KK"/>
+                                    <constraint firstItem="5b0-Pb-9X0" firstAttribute="leading" secondItem="l5t-vA-2wn" secondAttribute="leading" id="nnX-Qa-cQP"/>
+                                    <constraint firstAttribute="trailing" secondItem="5b0-Pb-9X0" secondAttribute="trailing" id="pzP-O3-Q4n"/>
+                                    <constraint firstAttribute="bottom" secondItem="QZ2-Cw-imd" secondAttribute="bottom" id="qh4-9o-ulR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="l5t-vA-2wn" firstAttribute="leading" secondItem="UYQ-X8-aW3" secondAttribute="leading" constant="166" id="KtL-ob-8pO"/>
+                            <constraint firstItem="yZO-zU-RW0" firstAttribute="centerX" secondItem="GmI-2k-Vso" secondAttribute="centerX" id="MQB-hu-Hcm"/>
+                            <constraint firstItem="yZO-zU-RW0" firstAttribute="centerY" secondItem="GmI-2k-Vso" secondAttribute="centerY" id="kXe-z3-5Su"/>
+                            <constraint firstItem="UYQ-X8-aW3" firstAttribute="bottom" secondItem="l5t-vA-2wn" secondAttribute="bottom" constant="137" id="us3-n1-gIb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UYQ-X8-aW3"/>
+                    </view>
+                    <connections>
+                        <outlet property="btn" destination="yZO-zU-RW0" id="dzo-oo-7a4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kMe-wX-MDG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="712" y="127"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="plus-highlighted" width="32" height="32"/>
+        <image name="plus-normal" width="32" height="32"/>
+    </resources>
+</document>
